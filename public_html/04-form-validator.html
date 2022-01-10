@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Validacija forme</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nenad Jovanovic">
+        <meta name="description" content="Validacija forme">
+        <meta name="keywords" content="javaScript,jQuery ">
+
+
+        <!--ios compatibility-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="jQuery Plugins">
+        <link rel="apple-touch-icon" href="apple-icon-144x144.png">
+
+
+        <!--Android compatibility-->
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="jQuery Plugins">
+        <link rel="icon" type="image/png" href="android-icon-192x192.png">
+
+
+        <!--CSS FILES-->
+
+        <!--Bootstrap-->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+        <!--Theme css-->
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+
+        <section class="form-wrapper">
+            <div class="container">
+                <a href="#" target="_blank">
+                    <img class="logo" src="android-icon-192x192.png" alt=""/>
+                </a>
+                <h2 class="text-uppercase">Popunite formu</h2>
+
+
+                <!-- Validacija forme-->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <form class="contact-form" method="get" action="">
+                            <!-- IME-->
+                            <div class="form-group">
+                                <label>Ime*</label>
+                                <input type="text" name="ime" value="" class="form-control">
+                                <div class="error-msg"></div>
+                            </div>
+
+                            <!--Prezime-->
+                            <div class="form-group">
+                                <label>Prezime*</label>
+                                <input type="text" name="prezime" value="" class="form-control">
+                                <div class="error-msg"></div>
+                            </div>
+
+                            <!--POL-->
+                            <div class="form-group">
+                                <label>Izaberite pol</label>
+                                <select class="form-control " name="pol">
+                                    <option value="">----</option>
+                                    <option value="1">Muški</option>
+                                    <option value="2">Ženski</option>
+                                </select>
+                                <div class="error-msg"></div>
+                            </div>
+
+                            <!--Godina rođenja-->
+                            <div class="form-group">
+                                <label>Godina rodjenja*</label>
+                                <input type="text" name="godina_rodjenja" value="" class="form-control">
+                                <div class="error-msg"></div>
+                            </div>
+
+
+                            <!--Adresa-->
+                            <div class="form-group">
+                                <label>Adresa*</label>
+                                <input type="text" name="adresa" value="" class="form-control">
+                                <div class="error-msg"></div>
+                            </div>
+
+                            <!--Grad-->
+                            <div class="form-group">
+                                <label>Grad*</label>
+                                <input type="text" name="grad" value="" class="form-control">
+                                <div class="error-msg"></div>
+                            </div>
+
+                            <!--Password-->
+                            <div class="form-group">
+                                <label>Password*</label>
+                                <input type="password" name="password" value="" id="password" class="form-control">
+                                <div class="error-msg"></div>
+                            </div>
+
+                            <!--Repeat password-->
+                            <div class="form-group">
+                                <label>RE Password*</label>
+                                <input type="password" name="repassword" value="" class="form-control">
+                                <div class="error-msg"></div>
+                            </div>
+
+                            <!--Poruka-->
+                            <div class="form-group">
+                                <label>Poruka</label>
+                                <textarea name="poruka" class="form-control"></textarea>
+                                <div class="error-msg"></div>
+                            </div>
+
+                            <!-- izabrati grad-->
+                            <div class="form-group">
+                                <label>Izaberite grad</label>
+                                <select class="form-control " name="grad">
+                                    <option value="">-- Izaberi grad --</option>
+                                    <option value="1">Belgrade</option>
+                                    <option value="2">Kraljevo</option>
+                                    <option value="3">Kursumlija</option>
+                                    <option value="3">Nis</option>
+                                    <option value="3">Novi Sad</option>
+                                </select>
+                                <div class="error-msg"></div>
+                            </div>
+
+
+                            <!--Pitanje 1-->
+                            <div class="form-group">
+                                <p>Pitanje 1:</p>
+                                <div class="form-check">
+                                    <label>
+                                        <input class="form-check-input" type="radio" name="pitanje1" value="1"> Odgovor 1
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label>
+                                        <input class="form-check-input" type="radio" name="pitanje1" value="2"> Odgovor 2
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label>
+                                        <input class="form-check-input" type="radio" name="pitanje1" value="3"> Odgovor 3
+                                    </label>
+                                </div>
+
+                                <div class="error-msg"></div>
+                            </div>
+
+
+                            <!--Pitanje 2-->
+                            <div class="form-group">
+                                <p>Pitanje 2</p>
+
+                                <div class="form-check">
+                                    <label>
+                                        <input class="form-check-input" type="checkbox" name="pitanje2" value="3"> Odgovor 1
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label>
+                                        <input class="form-check-input" type="checkbox" name="pitanje2" value="3"> Odgovor 2
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label>
+                                        <input class="form-check-input" type="checkbox" name="pitanje2" value="3"> Odgovor 3
+                                    </label>
+                                </div>
+                                <div class="error-msg"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="submit" name="send" value="yes">POTVRDI</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+        <!--font awesome icons-->
+        <script src="https://kit.fontawesome.com/85bd05dd45.js"></script>
+
+        <script src="js/jquery.validate.js" type="text/javascript"></script>
+        <!--custom js -->
+        <script src="js/main.js" type="text/javascript"></script>
+
+    </body>
+</html>
